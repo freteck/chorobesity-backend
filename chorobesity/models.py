@@ -8,3 +8,5 @@ class County(models.Model):
     population = models.IntegerField(null=False, default=0)
     obesity_percentage_afflicted = models.IntegerField(null=True, blank=True, default=0)
     obesity_population_afflicted = models.IntegerField(null=True, blank=True, default=0)
+    diabetes_percentage_afflicted = models.IntegerField(null=True, blank=True, default=0)
+    diabetes_population_afflicted = models.IntegerField(null=True, blank=True, default=0)
