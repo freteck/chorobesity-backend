@@ -3,8 +3,8 @@ from rest_framework import routers
 from chorobesity import views
 
 router = routers.DefaultRouter()
-router.register(r'', views.CountyViewSet)
+router.register(r'states', views.StateListViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
 ]
