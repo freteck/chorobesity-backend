@@ -22,7 +22,7 @@ class StateListViewSet(viewsets.ModelViewSet):
         states = State.objects.all()
         serializer = StateSerializer(states, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-
+        
     def retrieve(self, request, pk):
         counties = County.objects.filter(state=pk)
         serializer = CountySerializer(counties, many=True)
@@ -39,6 +39,3 @@ class StateListViewSet(viewsets.ModelViewSet):
             serializer.save()
 
         return Response("ok")
-
-        # print(serializer.data)
-        # return Response(serializer.data, status=status.HTTP_201_CREATED)
