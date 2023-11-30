@@ -88,8 +88,8 @@ WSGI_APPLICATION = 'chorobesity_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bradley',
-        'USER': 'bradley',
+        'NAME': "postgres",
+        'USER': "postgres",
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '4132',
